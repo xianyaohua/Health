@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ttyc.health">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.openinstall.APP_KEY"
+            android:value="difoz1"/>
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".views.DealCoinActivity"></activity>
+        <activity android:name=".views.SplashActivity"
+            android:theme="@style/splash_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.RegisterActivity"></activity>
+        <activity android:name=".views.SettingActivity"></activity>
+        <activity android:name=".views.UserInfoActivity"></activity>
+        <activity android:name=".views.DealCardsActivity"></activity>
+        <activity android:name=".views.LoginActivity"></activity>
+        <activity android:name=".views.WelcomActivity"></activity>
+        <activity android:name=".views.HomeActivity"></activity>
+    </application>
+
+</manifest>

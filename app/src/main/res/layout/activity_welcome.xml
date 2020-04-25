@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/image_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+
+            android:background="@null"
+            android:id="@+id/rb1"
+            android:button="@drawable/circle_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+           android:button="@drawable/circle_radio_button"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/rb2"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:id="@+id/rb3"
+           android:button="@drawable/circle_radio_button"
+          android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <TextView
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/tv"
+        android:onClick="onClickText"
+        android:background="@drawable/shape_corner_blue"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="点击进入"
+        android:textColor="@color/white"
+        android:textSize="@dimen/content_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

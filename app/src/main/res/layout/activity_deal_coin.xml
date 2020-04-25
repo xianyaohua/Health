@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.DealCoinActivity">
+    <include android:id="@+id/title"
+        layout="@layout/title_bar"></include>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/title"
+        android:background="@drawable/back"
+        android:src="@drawable/hmst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:background="@drawable/input_coner"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/uid_tv"
+            android:inputType="number"
+            android:hint="uid："
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/uid_tv"
+            android:layout_width="match_parent"
+            android:background="@color/Black_8c"
+            android:layout_height="1dp" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_coner"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/coin_count_et"
+            android:layout_below="@id/uid_tv"
+            android:inputType="number"
+            android:hint="交易数量："
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/coin_count_et"
+            android:layout_width="match_parent"
+            android:background="@color/Black_8c"
+            android:layout_height="1dp" />
+        <EditText
+            android:background="@drawable/input_coner"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/pwd_tv"
+            android:layout_below="@id/coin_count_et"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:hint="密码："
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/pwd_tv"
+            android:layout_width="match_parent"
+            android:background="@color/Black_8c"
+            android:layout_height="1dp" />
+        <TextView
+            android:onClick="deal"
+            android:layout_below="@id/pwd_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="确定"
+            android:background="@drawable/shape_corner_blue"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

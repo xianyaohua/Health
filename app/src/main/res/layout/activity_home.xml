@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/menu_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:checked="true"
+            android:gravity="center"
+            android:drawableTop="@drawable/home_radio_button"
+            android:button="@null"
+            android:id="@+id/index_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="首页"/>
+        <RadioButton
+            android:gravity="center"
+            android:drawableTop="@drawable/health_radio_button"
+            android:button="@null"
+            android:id="@+id/health_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="诊疗"/>
+        <RadioButton
+            android:gravity="center"
+            android:drawableTop="@drawable/shop_radio_button"
+            android:button="@null"
+            android:id="@+id/shop_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="商城"/>
+        <RadioButton
+            android:gravity="center"
+            android:drawableTop="@drawable/user_radio_button"
+            android:button="@null"
+            android:id="@+id/user_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="我的"/>
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tv_divider"
+        android:layout_above="@id/menu_rg"
+        android:background="@color/Black_9"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+    <com.ttyc.health.views.v4.MyNoScrollViewPager
+        android:id="@+id/fragment_vp"
+        android:layout_above="@id/tv_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.ttyc.health.views.v4.MyNoScrollViewPager>
+</RelativeLayout>

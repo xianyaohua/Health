@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_one_20">20sp</dimen>
+    <dimen name="title_two_18">18sp</dimen>
+    <dimen name="content_16">16sp</dimen>
+    <dimen name="content_14">14sp</dimen>
+    <dimen name="content_12">12sp</dimen>
+    <dimen name="content_8">8sp</dimen>
+    <dimen name="grid_expected_size">120dp</dimen>
+</resources>
